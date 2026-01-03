@@ -68,3 +68,4 @@ companies.splice(1,2,'netflix','spotify');
 console.log(companies);
 companies.push("tesla");
 console.log(companies);
+console.log(companies.indexOf('amazon'));
