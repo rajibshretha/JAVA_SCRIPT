@@ -72,67 +72,120 @@
 
 // Day 8 // functions in JS
 
-function greeet(){
-     console.log("Hello, welcome to JavaScript programming");
-     console.log("Have a great day!");
-}
-greeet();
-greeet();
+// function greeet(){
+//      console.log("Hello, welcome to JavaScript programming");
+//      console.log("Have a great day!");
+// }
+// greeet();
+// greeet();
 
-function myMsg(msg){
-     console.log(msg);
-}
-myMsg("This is my first function with parameter");
+// function myMsg(msg){
+//      console.log(msg);
+// }
+// myMsg("This is my first function with parameter");
 
-function sum(a,b){
-    console.log("before return");
-     return a+b;
-     console.log("after return"); // unreachable code
-}
-let result=sum(5,10);
-console.log("Sum is:",result);
+// function sum(a,b){
+//     console.log("before return");
+//      return a+b;
+//      console.log("after return"); // unreachable code
+// }
+// let result=sum(5,10);
+// console.log("Sum is:",result);
 
-// arrow function 
+// // arrow function 
 
-(a,b)=>{
-     return a+b;
-}
-// or
-let add=(a,b)=> a+b;
-let res=add(7,3);
-console.log("Addition is:",res);
+// (a,b)=>{
+//      return a+b;
+// }
+// // or
+// let add=(a,b)=> a+b;
+// let res=add(7,3);
+// console.log("Addition is:",res);
 
-let mul=(a,b)=> {
-     console.log(a*b);
-return a*b;};
-console.log("Multiplication is:",mul(5,4));
+// let mul=(a,b)=> {
+//      console.log(a*b);
+// return a*b;};
+// console.log("Multiplication is:",mul(5,4));
+
+// // practice problem:
+// function countVowels(str){
+//      let count = 0;
+//      let vowels = 'aeiouAEIOU';
+//      for (let i = 0; i < str.length; i++){
+//           if(vowels.includes(str[i])){
+//                count++;
+//           }
+//      }
+//      return count;  // ✅ return the count
+// }
+
+// let string = "Hello World";
+// let count = countVowels(string);
+// console.log("Number of vowels in the string is:", count);
+
+// let vCount=(str)=>{
+//      count=0;
+//    let vowels = 'aeiouAEIOU';
+//    for (i=0;i<=str.length;i++){
+//      if(vowels.includes(str[i])){
+//           count++;
+//      }
+//    }
+//    return count;
+// }
+// let stringh='Rajib Shrestha'
+// let countt=vCount(stringh)
+// console.log(count)
+
+// day 9 // deep dive into js
+
+let arr=[1,2,3,4,5];
+arr.forEach(function printVal(val){
+     console.log(val);   
+});
+
+let arrr=["kathmandu","pokhara","dhading","biratnagar"];
+arrr.forEach(function pCity(city){
+     console.log(city.toUpperCase());
+})
+// map function
+let squaredArr=arr.map(function squareVal(val){
+     return val*val;
+});
+console.log(squaredArr);
+// filter function
+let evenArr=arr.filter(function filterEven(val){
+     return val%2===0;
+});
+console.log(evenArr);
+// reduce function
+let sumArr=arr.reduce(function sumVal(accumulator,val){
+     return accumulator+val;
+},0);
+console.log(sumArr);
+
+const output=arr.reduce((prev,curr)=>{
+     return prev> curr? prev : curr;
+})
+console.log(output);
 
 // practice problem:
-function countVowels(str){
-     let count = 0;
-     let vowels = 'aeiouAEIOU';
-     for (let i = 0; i < str.length; i++){
-          if(vowels.includes(str[i])){
-               count++;
-          }
-     }
-     return count;  // ✅ return the count
-}
+let marks=[85,97,44,37,96,60];
+let a=marks.filter((val)=> {
+     return val>=90});
+console.log(a);
 
-let string = "Hello World";
-let count = countVowels(string);
-console.log("Number of vowels in the string is:", count);
-
-let vCount=(str)=>{
-     count=0;
-   let vowels = 'aeiouAEIOU';
-   for (i=0;i<=str.length;i++){
-     if(vowels.includes(str[i])){
-          count++;
-     }
-   }
-   return count;
+let n= prompt("enter your number: ");
+let aer=[];
+for (let i=1;i<=n;i++){
+     aer[i-1]=i;    
 }
-let stringh='Rajib Shrestha'
-let countt=vCount(stringh)
-console.log(count)
+console.log(aer);
+let sumaer=aer.reduce(function sumVall(accumulator,val){
+     return accumulator+val;
+})
+console.log("sum:",sumaer);
+let facaer=aer.reduce(function factArr(acc,val){
+     return acc*val;
+})
+console.log("factorial:",facaer);
