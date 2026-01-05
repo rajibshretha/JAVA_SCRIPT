@@ -193,6 +193,7 @@
 // Day 10 --DOM-document object model
 
 console.log(window.document)
+
 console.dir(window.body)
 
 let heading = document.getElementsById("header");
