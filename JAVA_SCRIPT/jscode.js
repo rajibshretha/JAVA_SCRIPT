@@ -139,53 +139,62 @@
 
 // day 9 // deep dive into js
 
-let arr=[1,2,3,4,5];
-arr.forEach(function printVal(val){
-     console.log(val);   
-});
+// let arr=[1,2,3,4,5];
+// arr.forEach(function printVal(val){
+//      console.log(val);   
+// });
 
-let arrr=["kathmandu","pokhara","dhading","biratnagar"];
-arrr.forEach(function pCity(city){
-     console.log(city.toUpperCase());
-})
-// map function
-let squaredArr=arr.map(function squareVal(val){
-     return val*val;
-});
-console.log(squaredArr);
-// filter function
-let evenArr=arr.filter(function filterEven(val){
-     return val%2===0;
-});
-console.log(evenArr);
-// reduce function
-let sumArr=arr.reduce(function sumVal(accumulator,val){
-     return accumulator+val;
-},0);
-console.log(sumArr);
+// let arrr=["kathmandu","pokhara","dhading","biratnagar"];
+// arrr.forEach(function pCity(city){
+//      console.log(city.toUpperCase());
+// })
+// // map function
+// let squaredArr=arr.map(function squareVal(val){
+//      return val*val;
+// });
+// console.log(squaredArr);
+// // filter function
+// let evenArr=arr.filter(function filterEven(val){
+//      return val%2===0;
+// });
+// console.log(evenArr);
+// // reduce function
+// let sumArr=arr.reduce(function sumVal(accumulator,val){
+//      return accumulator+val;
+// },0);
+// console.log(sumArr);
 
-const output=arr.reduce((prev,curr)=>{
-     return prev> curr? prev : curr;
-})
-console.log(output);
+// const output=arr.reduce((prev,curr)=>{
+//      return prev> curr? prev : curr;
+// })
+// console.log(output);
 
-// practice problem:
-let marks=[85,97,44,37,96,60];
-let a=marks.filter((val)=> {
-     return val>=90});
-console.log(a);
+// // practice problem:
+// let marks=[85,97,44,37,96,60];
+// let a=marks.filter((val)=> {
+//      return val>=90});
+// console.log(a);
 
-let n= prompt("enter your number: ");
-let aer=[];
-for (let i=1;i<=n;i++){
-     aer[i-1]=i;    
-}
-console.log(aer);
-let sumaer=aer.reduce(function sumVall(accumulator,val){
-     return accumulator+val;
-})
-console.log("sum:",sumaer);
-let facaer=aer.reduce(function factArr(acc,val){
-     return acc*val;
-})
-console.log("factorial:",facaer);
+// let n= prompt("enter your number: ");
+// let aer=[];
+// for (let i=1;i<=n;i++){
+//      aer[i-1]=i;    
+// }
+// console.log(aer);
+// let sumaer=aer.reduce(function sumVall(accumulator,val){
+//      return accumulator+val;
+// })
+// console.log("sum:",sumaer);
+// let facaer=aer.reduce(function factArr(acc,val){
+//      return acc*val;
+// })
+// console.log("factorial:",facaer);\
+
+// Day 10 --DOM-document object model
+
+console.log(window.document)
+console.dir(window.body)
+
+let heading = document.getElementsById("header");
+
+console.log(heading)
