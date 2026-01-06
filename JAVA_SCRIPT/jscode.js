@@ -193,6 +193,9 @@
 // Day 10 --DOM-document object model
 
 console.log(window.document)
+
+// Day 11 --Dom - practical
+
 console.dir(document.body);
 console.log(document.body);
 console.log(document.head);
@@ -211,3 +214,5 @@ console.dir(header);
 console.log(header);
 let allEl=document.querySelectorAll(".myClass");
 console.dir(allEl);
+
+console.dir(document.body.firstChild)
