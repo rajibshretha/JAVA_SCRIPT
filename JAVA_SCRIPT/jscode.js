@@ -193,9 +193,17 @@
 // Day 10 --DOM-document object model
 
 console.log(window.document)
+console.dir(document.body);
+console.log(document.body);
+console.log(document.head);
+console.dir(document.body.childNodes[1]);
 
-console.dir(window.body)
+document.body.childNodes[1].innerText="abcd";
 
-let heading = document.getElementsById("header");
+let heading = document.getElementById("header");//h1
 
-console.log(heading)
+console.dir(heading);
+
+let header = document.getElementsByClassName("heading-class");
+console.dir(header)
+console.log(header)
