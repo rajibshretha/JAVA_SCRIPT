@@ -201,7 +201,7 @@ console.log(document.body);
 console.log(document.head);
 console.dir(document.body.childNodes[1]);
 
-document.body.childNodes[1].innerText="abcd";
+document.body.childNodes[1].innerText="DIV 1";
 
 let heading = document.getElementById("header");//h1
 
@@ -216,3 +216,24 @@ let allEl=document.querySelectorAll(".myClass");
 console.dir(allEl);
 
 console.dir(document.body.firstChild)
+
+// practice qn
+
+let h2=document.querySelector("h2");
+console.log(h2);
+console.dir(h2.innerText);
+h2.innerText=h2.innerText + "From Rajib Shrestha";
+
+let divs=document.querySelectorAll(".box");
+console.dir(divs);
+console.dir(divs[2])
+let idx=0;
+for (div of divs){
+     console.dir(div.innerText);
+     div.innerText=`new unique valur ${idx}`;
+     idx++;
+}
+// divs[0].innerText="new unique value 1";
+// divs[1].innerText="new unique value 2";
+// divs[2].innerText="new unique value 3";
+console.dir(divs);
