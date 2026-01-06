@@ -204,6 +204,10 @@ let heading = document.getElementById("header");//h1
 
 console.dir(heading);
 
+let button = document.getElementById("my id");//h1
+console.dir(button);
 let header = document.getElementsByClassName("heading-class");
-console.dir(header)
-console.log(header)
+console.dir(header);
+console.log(header);
+let allEl=document.querySelectorAll(".myClass");
+console.dir(allEl);
