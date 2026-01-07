@@ -239,23 +239,43 @@
 // console.dir(divs);
 
 // Day 11
-let div=document.querySelector("div");
-console.log(div);
-console.log(div.style)
-div.style.backgroundColor="yellow";
-div.style.fontSize="30px";
-div.style.visibility="hidden";
+// let div=document.querySelector("div");
+// console.log(div);
+// console.log(div.style)
+// div.style.backgroundColor="yellow";
+// div.style.fontSize="30px";
+// div.style.visibility="";
 
-let id=div.getAttribute("id");
-console.log(id);
-let name=div.getAttribute("name");
-console.log(name);
+// let id=div.getAttribute("id");
+// console.log(id);
+// let name=div.getAttribute("name");
+// console.log(name);
 
-let paragraph=document.querySelector("p");
-console.log(paragraph.getAttribute("class"));
-paragraph.setAttribute("class","123");
+// let paragraph=document.querySelector("p");
+// console.log(paragraph.getAttribute("class"));
+// paragraph.setAttribute("class","123");
 
-let  newBtn=document.createElement("button");
-newBtn.innerText="clickme!";
-console.log(newBtn)
-console.log(newBtn.innerText);
+// let  newBtn=document.createElement("button");
+// newBtn.innerText="clickme!";
+// console.log(newBtn)
+// console.log(newBtn.innerText);
+// div.after(newBtn);
+
+// let newHeading = document.createElement("h2");
+// newHeading.innerText="helloworld";
+// document.querySelector("body").prepend(newHeading)
+
+// paragraph.remove()
+
+// practice qn:
+
+let newButton=document.createElement("button");
+newButton.innerText="Click me";
+newButton.style.backgroundColor="red";
+newButton.style.color="white";
+
+document.querySelector("body").prepend(newButton);
+
+let bewPara=document.createElement("paragraph");
+bewPara.innerText="Hello Rajib";
+bewPara.backgroundColor="red";
