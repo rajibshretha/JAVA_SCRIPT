@@ -192,48 +192,60 @@
 
 // Day 10 --DOM-document object model
 
-console.log(window.document)
+// console.log(window.document)
 
-// Day 11 --Dom - practical
+// // Day 11 --Dom - practical
 
-console.dir(document.body);
-console.log(document.body);
-console.log(document.head);
-console.dir(document.body.childNodes[1]);
+// console.dir(document.body);
+// console.log(document.body);
+// console.log(document.head);
+// console.dir(document.body.childNodes[1]);
 
-document.body.childNodes[1].innerText="DIV 1";
+// document.body.childNodes[1].innerText="DIV 1";
 
-let heading = document.getElementById("header");//h1
+// let heading = document.getElementById("header");//h1
 
-console.dir(heading);
+// console.dir(heading);
 
-let button = document.getElementById("my id");//h1
-console.dir(button);
-let header = document.getElementsByClassName("heading-class");
-console.dir(header);
-console.log(header);
-let allEl=document.querySelectorAll(".myClass");
-console.dir(allEl);
+// let button = document.getElementById("my id");//h1
+// console.dir(button);
+// let header = document.getElementsByClassName("heading-class");
+// console.dir(header);
+// console.log(header);
+// let allEl=document.querySelectorAll(".myClass");
+// console.dir(allEl);
 
-console.dir(document.body.firstChild)
+// console.dir(document.body.firstChild)
 
-// practice qn
+// // practice qn
 
-let h2=document.querySelector("h2");
-console.log(h2);
-console.dir(h2.innerText);
-h2.innerText=h2.innerText + "From Rajib Shrestha";
+// let h2=document.querySelector("h2");
+// console.log(h2);
+// console.dir(h2.innerText);
+// h2.innerText=h2.innerText + "From Rajib Shrestha";
 
-let divs=document.querySelectorAll(".box");
-console.dir(divs);
-console.dir(divs[2])
-let idx=0;
-for (div of divs){
-     console.dir(div.innerText);
-     div.innerText=`new unique valur ${idx}`;
-     idx++;
-}
-// divs[0].innerText="new unique value 1";
-// divs[1].innerText="new unique value 2";
-// divs[2].innerText="new unique value 3";
-console.dir(divs);
+// let divs=document.querySelectorAll(".box");
+// console.dir(divs);
+// console.dir(divs[2])
+// let idx=0;
+// for (div of divs){
+//      console.dir(div.innerText);
+//      div.innerText=`new unique valur ${idx}`;
+//      idx++;
+// }
+// // divs[0].innerText="new unique value 1";
+// // divs[1].innerText="new unique value 2";
+// // divs[2].innerText="new unique value 3";
+// console.dir(divs);
+
+// Day 11
+let div=document.querySelector("div");
+console.log(div);
+
+let id=div.getAttribute("id");
+console.log(id);
+let name=div.getAttribute("name");
+console.log(name);
+
+let paragraph=document.querySelector("p")
+console.log(paragraph.getAttribute("class"))
