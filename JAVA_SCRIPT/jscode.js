@@ -162,83 +162,83 @@
 // let sumArr=arr.reduce(function sumVal(accumulator,val){
 //      return accumulator+val;
 // },0);
-// console.log(sumArr);
+// // console.log(sumArr);
 
-// const output=arr.reduce((prev,curr)=>{
-//      return prev> curr? prev : curr;
-// })
-// console.log(output);
+// // const output=arr.reduce((prev,curr)=>{
+// //      return prev> curr? prev : curr;
+// // })
+// // console.log(output);
 
-// // practice problem:
-// let marks=[85,97,44,37,96,60];
-// let a=marks.filter((val)=> {
-//      return val>=90});
-// console.log(a);
+// // // practice problem:
+// // let marks=[85,97,44,37,96,60];
+// // let a=marks.filter((val)=> {
+// //      return val>=90});
+// // console.log(a);
 
-// let n= prompt("enter your number: ");
-// let aer=[];
-// for (let i=1;i<=n;i++){
-//      aer[i-1]=i;    
-// }
-// console.log(aer);
-// let sumaer=aer.reduce(function sumVall(accumulator,val){
-//      return accumulator+val;
-// })
-// console.log("sum:",sumaer);
-// let facaer=aer.reduce(function factArr(acc,val){
-//      return acc*val;
-// })
-// console.log("factorial:",facaer);\
+// // let n= prompt("enter your number: ");
+// // let aer=[];
+// // for (let i=1;i<=n;i++){
+// //      aer[i-1]=i;    
+// // }
+// // console.log(aer);
+// // let sumaer=aer.reduce(function sumVall(accumulator,val){
+// //      return accumulator+val;
+// // })
+// // console.log("sum:",sumaer);
+// // let facaer=aer.reduce(function factArr(acc,val){
+// //      return acc*val;
+// // })
+// // console.log("factorial:",facaer);\
 
-// Day 10 --DOM-document object model
+// // Day 10 --DOM-document object model
 
-// console.log(window.document)
+// // console.log(window.document)
 
-// // Day 11 --Dom - practical
+// // // Day 11 --Dom - practical
 
-// console.dir(document.body);
-// console.log(document.body);
-// console.log(document.head);
-// console.dir(document.body.childNodes[1]);
+// // console.dir(document.body);
+// // console.log(document.body);
+// // console.log(document.head);
+// // console.dir(document.body.childNodes[1]);
 
-// document.body.childNodes[1].innerText="DIV 1";
+// // document.body.childNodes[1].innerText="DIV 1";
 
-// let heading = document.getElementById("header");//h1
+// // let heading = document.getElementById("header");//h1
 
-// console.dir(heading);
+// // console.dir(heading);
 
-// let button = document.getElementById("my id");//h1
-// console.dir(button);
-// let header = document.getElementsByClassName("heading-class");
-// console.dir(header);
-// console.log(header);
-// let allEl=document.querySelectorAll(".myClass");
-// console.dir(allEl);
+// // let button = document.getElementById("my id");//h1
+// // console.dir(button);
+// // let header = document.getElementsByClassName("heading-class");
+// // console.dir(header);
+// // console.log(header);
+// // let allEl=document.querySelectorAll(".myClass");
+// // console.dir(allEl);
 
-// console.dir(document.body.firstChild)
+// // console.dir(document.body.firstChild)
 
-// // practice qn
+// // // practice qn
 
-// let h2=document.querySelector("h2");
-// console.log(h2);
-// console.dir(h2.innerText);
-// h2.innerText=h2.innerText + "From Rajib Shrestha";
+// // let h2=document.querySelector("h2");
+// // console.log(h2);
+// // console.dir(h2.innerText);
+// // h2.innerText=h2.innerText + "From Rajib Shrestha";
 
-// let divs=document.querySelectorAll(".box");
-// console.dir(divs);
-// console.dir(divs[2])
-// let idx=0;
-// for (div of divs){
-//      console.dir(div.innerText);
-//      div.innerText=`new unique valur ${idx}`;
-//      idx++;
-// }
-// // divs[0].innerText="new unique value 1";
-// // divs[1].innerText="new unique value 2";
-// // divs[2].innerText="new unique value 3";
-// console.dir(divs);
+// // let divs=document.querySelectorAll(".box");
+// // console.dir(divs);
+// // console.dir(divs[2])
+// // let idx=0;
+// // for (div of divs){
+// //      console.dir(div.innerText);
+// //      div.innerText=`new unique valur ${idx}`;
+// //      idx++;
+// // }
+// // // divs[0].innerText="new unique value 1";
+// // // divs[1].innerText="new unique value 2";
+// // // divs[2].innerText="new unique value 3";
+// // console.dir(divs);
 
-// Day 11
+// // Day 11
 // let div=document.querySelector("div");
 // console.log(div);
 // console.log(div.style)
@@ -267,15 +267,19 @@
 
 // paragraph.remove()
 
-// practice qn:
+// // practice qn:
 
-let newButton=document.createElement("button");
-newButton.innerText="Click me";
-newButton.style.backgroundColor="red";
-newButton.style.color="white";
+// let newButton=document.createElement("button");
+// newButton.innerText="Click me";
+// newButton.style.backgroundColor="red";
+// newButton.style.color="white";
 
-document.querySelector("body").prepend(newButton);
+// document.querySelector("body").prepend(newButton);
 
-let bewPara=document.createElement("paragraph");
-bewPara.innerText="Hello Rajib";
-bewPara.backgroundColor="red";
+// let bewPara=document.createElement("paragraph");
+// bewPara.innerText="Hello Rajib";
+// bewPara.backgroundColor="red";
+
+// // qn 2
+
+// let para=document.querySelector("p")
