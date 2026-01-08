@@ -1,4 +1,4 @@
-/* #paragraphone{
+#paragraphone{
      color: rgb(0, 255, 72);
      height: 200px;
      background-color: red;
@@ -10,4 +10,7 @@
 }
 .newClass{
      background-color: greenyellow;
-} */
+}
+ #para{
+     background-color: rgb(131, 31, 31);
+ }
