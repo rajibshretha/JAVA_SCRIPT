@@ -43,3 +43,8 @@ btn1.removeEventListener("click",handler3);
 
 // practice question
 
+let modeBtn=document.querySelector("#mode");
+
+modeBtn.addEventListener("click", () =>{
+    console.log("youre trying to chage the mode")
+})
