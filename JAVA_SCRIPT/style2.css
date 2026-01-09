@@ -1,4 +1,4 @@
-#para{
+/* #para{
      background-color: red;
 }
 *body{
@@ -9,4 +9,11 @@ div{
      width: 100px;
      border: 1px solid red;
      background-color: rgb(166, 233, 166);
+} */
+
+div{
+     color:white;
+     height: 100px;
+     width: 100px;
+     background-color: red;
 }
