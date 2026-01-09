@@ -43,8 +43,34 @@ btn1.removeEventListener("click",handler3);
 
 // practice question
 
-let modeBtn=document.querySelector("#mode");
+let modeBtn = document.querySelector("#mode");
+let currmode="light";
 
 modeBtn.addEventListener("click", () =>{
-    console.log("youre trying to chage the mode")
-})
+    if(currmode==="light"){
+        currmode="dark";
+        document.querySelector("body").style.backgroundColor="black";
+    }
+    else{
+        currmode="light"
+        document.querySelector("body").style.backgroundColor="white";
+    }
+    console.log(currmode)
+});
+
+// orr we can add it through class method
+
+let body=document.querySelector("body");
+modeBtn.addEventListener("click", () =>{
+    if(currmode==="light"){
+        currmode="dark";
+        body.classList.add("dark");
+        body.classList.remove("light")
+    }
+    else{
+        currmode="light"
+        body.classList.add("light");
+        body.classList.remove("dark");
+    }
+    console.log(currmode)
+});
