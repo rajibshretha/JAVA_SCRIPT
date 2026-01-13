@@ -3,6 +3,8 @@ let compScore=0;
 
 const choices = document.querySelectorAll(".choice");
 const msg=document.querySelector("#msg");
+const userScorepara=document.querySelector("#user-score")
+const compScorepara=document.querySelector("#computer-score")
 
 const genComputerChoice=()=>{
      //rock,paper,scissor
@@ -12,24 +14,31 @@ const genComputerChoice=()=>{
 }
 
 const drawGame=()=>{
-     console.log("The game was draw")
      msg.innerText="The game was a draw!";
+     msg.style.backgroundColor="grey";
+     
 }
 
-const showWinner = (userWin)=>{
+const showWinner = (userWin,userChoice,compChoice)=>{
      if(userWin){
-          console.log("you win!");
-          msg.innerText="you win!";
+          userScore++;
+
+          userScorepara.innerText=userScore;
+          msg.innerText=`you win! Your ${userChoice} beats ${compChoice}`;
+          msg.style.backgroundColor="green";
      }else{
-          msg.innerText="you lose!";
-          console.log("you lose!")
+          compScore++;          
+          msg.style.backgroundColor="red";
+          compScorepara.innerText=compScore;
+          msg.innerText=`you lose!  ${compChoice} beats Your ${userChoice}`;
+          
      }
 }
 const playGame=(userChoice)=>{
-     console.log("user choice :",userChoice);
+    
      //generate computer choice
      const compChoice=genComputerChoice();
-     console.log("computer choice :",compChoice);
+    
 
      if(userChoice===compChoice){
           //Draw game
@@ -44,7 +53,7 @@ const playGame=(userChoice)=>{
           }else{
                userWin=compChoice==="rock" ? false : true;
           }
-          showWinner(userWin);
+          showWinner(userWin,userChoice,compChoice);
      }
 }
 choices.forEach((choice)=>{
