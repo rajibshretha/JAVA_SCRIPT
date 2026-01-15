@@ -69,10 +69,11 @@ class Person{
 
 class Engineer extends Person {
      constructor(name){
-          super();
+          super(name);//to invoke parent class constructor
      }
      work(){
+          super.eat();
           console.log("solver problems , build something useful");
      }
 }
-let engOobj=new Engineer("Rajib");
+let engobj=new Engineer("Rajib");
