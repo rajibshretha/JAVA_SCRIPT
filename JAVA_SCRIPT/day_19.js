@@ -57,12 +57,22 @@ console.log(fortuner);
 let lexus=new ToyotaCar("lexus",12);//constructor
 console.log(lexus);
 
-class Parent{
-     hello(){
-          console.log("hello");
-     }
+class Person{
+   constructor(name){
+     this.species="homo sapiens";
+     this.name=name;
+   }
+   eat(){
+     console.log("eat");
+   }
 }
 
-class Child extends Parent {
-     
+class Engineer extends Person {
+     constructor(name){
+          super();
+     }
+     work(){
+          console.log("solver problems , build something useful");
+     }
 }
+let engOobj=new Engineer("Rajib");
