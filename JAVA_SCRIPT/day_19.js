@@ -39,43 +39,76 @@
 
 // Day_20 Classes in JS
 
-class ToyotaCar {
-     constructor(brand,mileage){
-          console.log("creating new object");
-          this.brand=brand;
-          this.mileage=mileage;
-     }
-     start(){
-          console.log("started")
-     }
-     stop(){
-          console.log("stopped");
-     }
-}
-let fortuner=new ToyotaCar("fortuner",10);//constructor
-console.log(fortuner);
-let lexus=new ToyotaCar("lexus",12);//constructor
-console.log(lexus);
+// class ToyotaCar {
+//      constructor(brand,mileage){
+//           console.log("creating new object");
+//           this.brand=brand;
+//           this.mileage=mileage;
+//      }
+//      start(){
+//           console.log("started")
+//      }
+//      stop(){
+//           console.log("stopped");
+//      }
+// }
+// let fortuner=new ToyotaCar("fortuner",10);//constructor
+// console.log(fortuner);
+// let lexus=new ToyotaCar("lexus",12);//constructor
+// console.log(lexus);
 
-class Person{
-   constructor(name){
-     this.species="homo sapiens";
-     this.name=name;
-   }
-   eat(){
-     console.log("eat");
-   }
+// class Person{
+//    constructor(name){
+//      this.species="homo sapiens";
+//      this.name=name;
+//    }
+//    eat(){
+//      console.log("eat");
+//    }
+// }
+
+// class Engineer extends Person {
+//      constructor(name){
+//           super(name);//to invoke parent class constructor
+//      }
+//      work(){
+//           super.eat();
+//           console.log("solver problems , build something useful");
+//      }
+// }
+// let engobj=new Engineer("Rajib");
+// hello
+// // still hello9
+
+// day 21
+
+let data="secret information";
+
+class User{
+     constructor(name,email){
+          this.name=name;
+          this.email=email;
+
+     }
+     viewdata(){
+          console.log("website data",data);
+     }
 }
 
-class Engineer extends Person {
-     constructor(name){
-          super(name);//to invoke parent class constructor
+class Admin extends User{
+     constructor(name,email){
+          super(name,email);
      }
-     work(){
-          super.eat();
-          console.log("solver problems , build something useful");
+     editData(){
+          data="some new value"
      }
 }
-let engobj=new Engineer("Rajib");
-hello
-still hello
+
+let student1=new User("rajib","rajib@gmail.com");
+let student2=new User("rajibb","rajibb@gmail.com");
+let student3=new User("rajibbb","rajibbb@gmail.com");
+let student4=new User("rajibbbb","rajibbbb@gmail.com");
+
+let teacher1=new User("dean","dean@gmail.com")
+
+let admin1=new Admin("admin","admin@college.com");
