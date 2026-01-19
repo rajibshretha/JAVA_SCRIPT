@@ -82,33 +82,83 @@
 
 // day 21
 
-let data="secret information";
+// let data="secret information";
 
-class User{
-     constructor(name,email){
-          this.name=name;
-          this.email=email;
+// class User{
+//      constructor(name,email){
+//           this.name=name;
+//           this.email=email;
 
+//      }
+//      viewdata(){
+//           console.log("website data",data);
+//      }
+// }
+
+// class Admin extends User{
+//      constructor(name,email){
+//           super(name,email);
+//      }
+//      editData(){
+//           data="some new value"
+//      }
+// }
+
+// let student1=new User("rajib","rajib@gmail.com");
+// let student2=new User("rajibb","rajibb@gmail.com");
+// let student3=new User("rajibbb","rajibbb@gmail.com");
+// let student4=new User("rajibbbb","rajibbbb@gmail.com");
+
+// let teacher1=new User("dean","dean@gmail.com")
+
+// let admin1=new Admin("admin","admin@college.com");
+
+
+// Day 22
+
+function hello(){
+     console.log("hello world");
+}
+console.log("one")
+console.log("two")
+
+setTimeout(hello,3000);
+console.log("three")
+
+function sum(a,b){
+     console.log(a+b);
+}
+function calculator(a,b,sumCallback){
+     sumCallback(a,b);
+}
+calculator(1,2,(a,b)=>{
+     console.log(a+b)
+})
+sum(1,2);
+
+let age=19;
+if(age>=18){
+     if(age>=60){
+          console.log("senior");
      }
-     viewdata(){
-          console.log("website data",data);
+     else{
+          console.log("middle");
      }
 }
-
-class Admin extends User{
-     constructor(name,email){
-          super(name,email);
-     }
-     editData(){
-          data="some new value"
-     }
+else{
+     console.log("child")
 }
 
-let student1=new User("rajib","rajib@gmail.com");
-let student2=new User("rajibb","rajibb@gmail.com");
-let student3=new User("rajibbb","rajibbb@gmail.com");
-let student4=new User("rajibbbb","rajibbbb@gmail.com");
-
-let teacher1=new User("dean","dean@gmail.com")
-
-let admin1=new Admin("admin","admin@college.com");
+function getData(dataId,getNextData){
+     setTimeout(()=>{
+          console.log("data",dataId);
+          if(getNextData){
+               getNextData();
+          }
+     },2000);
+}
+getData(1,()=>{
+     getData(2,()=>{
+          getData(3);
+     });
+});
