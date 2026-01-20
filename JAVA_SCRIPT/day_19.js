@@ -116,49 +116,52 @@
 
 // Day 22
 
-function hello(){
-     console.log("hello world");
-}
-console.log("one")
-console.log("two")
+// function hello(){
+//      console.log("hello world");
+// }
+// console.log("one")
+// console.log("two")
 
-setTimeout(hello,3000);
-console.log("three")
+// setTimeout(hello,3000);
+// console.log("three")
 
-function sum(a,b){
-     console.log(a+b);
-}
-function calculator(a,b,sumCallback){
-     sumCallback(a,b);
-}
-calculator(1,2,(a,b)=>{
-     console.log(a+b)
-})
-sum(1,2);
+// function sum(a,b){
+//      console.log(a+b);
+// }
+// function calculator(a,b,sumCallback){
+//      sumCallback(a,b);
+// }
+// calculator(1,2,(a,b)=>{
+//      console.log(a+b)
+// })
+// sum(1,2);
 
-let age=19;
-if(age>=18){
-     if(age>=60){
-          console.log("senior");
-     }
-     else{
-          console.log("middle");
-     }
-}
-else{
-     console.log("child")
-}
+// let age=19;
+// if(age>=18){
+//      if(age>=60){
+//           console.log("senior");
+//      }
+//      else{
+//           console.log("middle");
+//      }
+// }
+// else{
+//      console.log("child")
+// }
 
-function getData(dataId,getNextData){
-     setTimeout(()=>{
-          console.log("data",dataId);
-          if(getNextData){
-               getNextData();
-          }
-     },2000);
-}
-getData(1,()=>{
-     getData(2,()=>{
-          getData(3);
-     });
-});
+// function getData(dataId,getNextData){
+//      setTimeout(()=>{
+//           console.log("data",dataId);
+//           if(getNextData){
+//                getNextData();
+//           }
+//      },2000);
+// }
+// getData(1,()=>{
+//      getData(2,()=>{
+//           getData(3);
+//      });
+// });
+
+// Day 23 
+
