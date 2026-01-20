@@ -165,3 +165,19 @@
 
 // Day 23 
 
+// let promise = new Promise((resolve,reject)=>{
+//      console.log("Iam a promise.")
+//      reject("some error occurred")
+// })
+
+function getData(dataId,getNextData){
+     return new Promise((resolve,reject)=>{
+          setTimeout(()=>{
+               console.log("data",dataId);
+               resolve("success");
+          if (getNextData){
+               getNextData();
+          }
+          },2000);
+     });
+}
