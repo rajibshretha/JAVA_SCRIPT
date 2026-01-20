@@ -170,14 +170,30 @@
 //      reject("some error occurred")
 // })
 
-function getData(dataId,getNextData){
+// function getData(dataId,getNextData){
+//      return new Promise((resolve,reject)=>{
+//           setTimeout(()=>{
+//                console.log("data",dataId);
+//                resolve("success");
+//           if (getNextData){
+//                getNextData();
+//           }
+//           },2000);
+//      });
+// }
+
+const getPromise=()=>{
      return new Promise((resolve,reject)=>{
-          setTimeout(()=>{
-               console.log("data",dataId);
-               resolve("success");
-          if (getNextData){
-               getNextData();
-          }
-          },2000);
+          console.log("Iam a promise.");
+          // resolve("Success");
+          reject("error")
      });
-}
+};
+
+let promise = getPromise();
+promise.then(()=>{
+     console.log("Promise fulfilled")
+})
+promise.catch(()=>{
+     console.log("rejected")
+})
