@@ -198,6 +198,7 @@
 //      console.log("rejected")
 // })
 
+
 // Day 24
 
 function asyncFunc1(){
@@ -258,5 +259,4 @@ async function getWeatherData(){
      await api()
      await api()
 }
-
 getWeatherData()
