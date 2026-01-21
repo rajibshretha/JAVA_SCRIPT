@@ -165,22 +165,22 @@
 
 // Day 23 
 
-// let promise = new Promise((resolve,reject)=>{
-//      console.log("Iam a promise.")
-//      reject("some error occurred")
-// })
+let promise = new Promise((resolve,reject)=>{
+     console.log("Iam a promise.")
+     reject("some error occurred")
+})
 
-// function getData(dataId,getNextData){
-//      return new Promise((resolve,reject)=>{
-//           setTimeout(()=>{
-//                console.log("data",dataId);
-//                resolve("success");
-//           if (getNextData){
-//                getNextData();
-//           }
-//           },2000);
-//      });
-// }
+function getData(dataId,getNextData){
+     return new Promise((resolve,reject)=>{
+          setTimeout(()=>{
+               console.log("data",dataId);
+               resolve("success");
+          if (getNextData){
+               getNextData();
+          }
+          },2000);
+     });
+}
 
 const getPromise=()=>{
      return new Promise((resolve,reject)=>{
@@ -190,7 +190,7 @@ const getPromise=()=>{
      });
 };
 
-let promise = getPromise();
+let promisee = getPromise();
 promise.then(()=>{
      console.log("Promise fulfilled")
 })
