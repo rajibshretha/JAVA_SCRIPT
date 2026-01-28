@@ -280,7 +280,7 @@
 
 // #Day_30
 
-
+console.log("hello world  hello")
 
 
 // cd "c:\CODING\WEB DEVELOPMENT\SELF LEARN HTML-CSS-JAVASCRIPT\JAVA SCRIPT\java_script\JAVA_SCRIPT"
