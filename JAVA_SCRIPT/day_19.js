@@ -280,7 +280,19 @@
 
 // #Day_30
 
-console.log("hello world  hello")
+// console.log("hello world  hello")
+
+// DOM
+
+console.log(document.head)
+
+// DOM manipulation
+
+document.getElementById("header1");//getting with id
+console.dir(header1)
+
+const para1=document.getElementsByClassName("paragraph1");
+console.dir(para1)
 
 
 // cd "c:\CODING\WEB DEVELOPMENT\SELF LEARN HTML-CSS-JAVASCRIPT\JAVA SCRIPT\java_script\JAVA_SCRIPT"
