@@ -295,6 +295,8 @@ const para1=document.getElementsByClassName("paragraph1");
 console.dir(para1)
 console.dir(para1)
 console.dir(para1)
+console.dir(para1)
+console.dir(para1)
 
 
 // cd "c:\CODING\WEB DEVELOPMENT\SELF LEARN HTML-CSS-JAVASCRIPT\JAVA SCRIPT\java_script\JAVA_SCRIPT"
