@@ -4,10 +4,52 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Document</title>
+     <style>
+          .sum{
+               height: 50%;
+               width: 50%;
+               border-radius:5%;
+               background-color: rgb(108, 202, 113);
+               align-content: center;
+               text-align: center;
+               display:grid;
+          }
+          .div{
+               align-items: center;
+               align-content: center;
+               align-self: center;
+               background-color: rgb(112, 161, 235);
+          }
+          input[type=number]{
+               border-radius: 10%;
+               width: 50%;
+               border: 1px rgb(57, 41, 41) solid;
+          }
+          #inp2{
+               margin-bottom: 5px;
+               margin-left: 25%;
+          }
+          #inp1{
+               margin-bottom: 5px;
+               margin-left: 25%;
+          }
+          button{
+               width: 30%;
+               margin-bottom: 5px;
+               margin-left: 35%;
+               
+          }
+          
+     </style>
 </head>
 <body>
-     
-
+     <div class="sum">
+          <h1 class="div">SUM master</h1>
+          <input type="number" id="inp2">
+          <input type="number" id="inp1">
+          <button  class="div" onclick="add()" >ANSWER</menu> </button>
+          <textbox id="result">
+     </div>
      <script src="march.js"></script>
 </body>
 </html>
