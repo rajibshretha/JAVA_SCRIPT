@@ -32,60 +32,65 @@
 //      document.body.classList.toggle("dark");
 // }
 
-fullname="Rajib Shrestha";
-console.log(fullname);
-console.log("rajib");
+// MARCH 9
 
-let age=132;
-age=1562;
-age=1652;
-console.log(age);
+// fullname="Rajib Shrestha";
+// console.log(fullname);
+// console.log("rajib");
 
-const students={
-     name: "rajib",
-     class:11
-}
-console.log(students.class);
-students["class"]=12;
-console.log(students.class);
+// let age=132;
+// age=1562;
+// age=1652;
+// console.log(age);
 
-const product={
-     title:"Ball pen ",
-     rating:3,
-     offer:4,
-     price:234,
-     discount:true
-};
-console.log(product);
+// const students={
+//      name: "rajib",
+//      class:11
+// }
+// console.log(students.class);
+// students["class"]=12;
+// console.log(students.class);
 
-const phone={
-     name: "Samsung",
-     model:"s23",
-     price:234444,     
-}
-console.log(phone );
-phone.color="red";
-console.log(phone);
-phone.price=110000;
+// const product={
+//      title:"Ball pen ",
+//      rating:3,
+//      offer:4,
+//      price:234,
+//      discount:true
+// };
+// console.log(product);
 
-const student = {
-  name: "Rajib",
-  age: 17,
-  marks: 85
-}
-student.grade="A";
-student.marks=student.marks+5;
-console.log("",student.name ,"scored ",student.marks , "and got grade ", student.grade)
+// const phone={
+//      name: "Samsung",
+//      model:"s23",
+//      price:234444,     
+// }
+// console.log(phone );
+// phone.color="red";
+// console.log(phone);
+// phone.price=110000;
 
-const products = {
-  name: "Ball Pen",
-  price: 100,
-  discount: 10,
-  quantity: 3
-};
-let final_p= products.price - (products.price*products.discount/100);
-let total=final_p*products.quantity;
-console.log("Product:", products.name);
-console.log("Price after discount:", final_p);
-console.log("Quantity:", products.quantity);
-console.log("Total Bill:", total);
+// const student = {
+//   name: "Rajib",
+//   age: 17,
+//   marks: 85
+// }
+// student.grade="A";
+// student.marks=student.marks+5;
+// console.log("",student.name ,"scored ",student.marks , "and got grade ", student.grade)
+
+// const products = {
+//   name: "Ball Pen",
+//   price: 100,
+//   discount: 10,
+//   quantity: 3
+// };
+// let final_p= products.price - (products.price*products.discount/100);
+// let total=final_p*products.quantity;
+// console.log("Product:", products.name);
+// console.log("Price after discount:", final_p);
+// console.log("Quantity:", products.quantity);
+// console.log("Total Bill:", total);
+
+// MARCH 10
+
