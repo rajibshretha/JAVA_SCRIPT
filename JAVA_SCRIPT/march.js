@@ -94,3 +94,59 @@
 
 // MARCH 10
 
+// let a =5;
+// let b ="5";
+// console.log(a===b);
+// let aa=console.log(a>b || a==b);
+// console.log(aa)
+
+// if (a==5){
+//      console.log("Hello world");
+// }
+// else if(a===5){
+//      console.log("hello rajib");
+// }
+// alert("unwanted virus")
+// let number = prompt("Enter a number");
+// if (number%5==0){
+//      console.log("The given number is divisible by 5")
+// }
+// else {
+//      console.log("The given number is not divisible by 5");
+// }
+
+// let username = prompt("Enter username");
+// let password = prompt("Enter password");
+// let age = number(prompt("Enter age"));
+
+// const ousername="rajib";
+// const opassword="12345";
+// if (ousername==username && opassword==password && age<=18){
+//      console.log("Access granted but youre under 18");
+// }
+// else if (ousername==username && opassword==password && age>18){
+//      console.log("Access granted \n full authority");
+// }
+// else{
+//      console.log("ACCESS DENIED");
+// }
+
+// let secretNumber = Math.floor(Math.random() * 10) + 1;
+// let count=0;
+// let guess = prompt("Guess a number between 1 and 10");
+
+// while(guess != secretNumber){
+//      count++;
+//     if(guess > secretNumber){
+//         console.log("Too High");
+//     }
+
+//     else{
+//         console.log("Too Low");
+//     }
+
+//     guess = prompt("Try again");
+// }
+
+// console.log("Correct! You guessed the number.");
+// console.log(count,"tried taken to guess the correct answer ");
