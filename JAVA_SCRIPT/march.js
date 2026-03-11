@@ -150,3 +150,84 @@
 
 // console.log("Correct! You guessed the number.");
 // console.log(count,"tried taken to guess the correct answer ");
+
+// MARCH 11 "" LOOPS AND STRINGS  ""
+
+// for(let i = 1 ;i <=5;i++){
+//      console.log(i+i)
+// }
+// // for of loop
+
+// let vara="rajib";
+
+// size=0;
+// for (let i of vara){
+//      size+=1;
+//      console.log(i);
+// }
+// console.log("string size : ",size);
+
+// // for in loop
+
+// let student ={
+//      name: "rajib shrest",
+//      age:23,
+//      cgpa:345,
+//      ispass:true,
+
+// }
+// for (let i in student){
+//      console.log(i);
+//      console.log(student[i]);
+// }
+
+// for(let i =0 ;i<=100;i++){
+//      if(i%2==0){
+//           console.log(i);
+//      }
+// }
+
+let student = {
+    name: "Rajib",
+    age: 17,
+    marks: 78,
+    isPass: true
+};
+for (let key in student){
+     console.log(key,":",student[key]);
+}
+count=0;
+for(let letter of student.name){
+     count++;
+}
+console.log("Total length of name",count);
+for (let i = 1; i <= 20; i++){
+    if(i % 2 === 0){
+        console.log(i);
+    }
+}
+if(student.isPass){
+     console.log(student.name,"has passed");
+}
+else{
+     console.log(student.name,"has failed");
+}
+
+let name="Rajib";
+let counts=0;
+let temp="";
+for (let i of name){
+     counts++;
+     temp=temp+i;
+     for (let j =1; j<=counts; j++){
+          console.log(temp);
+     }
+     // console.log(i.toUpperCase());
+}
+let namee = "RAJIB";
+let tempp = "";
+
+for (let i of namee){
+    tempp = tempp + i;
+    console.log(tempp);
+}
