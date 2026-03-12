@@ -230,9 +230,9 @@
 // for (let i of namee){
 //     tempp = tempp + i;
 //     console.log(tempp);
-// }
+// // }
 
-// MARCH 12
+// // MARCH 12
 
 // let rajib="    Rajib SHRESTHA     ";
 // let add="don";
@@ -272,6 +272,14 @@
 // // }
 // let temp=0;
 // let marks=[85,97,44,37,76,60];
-// for(let idx=0 , idx<=marks.length,idx++){
-//      temp=temp+marks[idx];
+// for(let mark of marks){
+//      temp=temp+mark;
 // }
+// console.log(temp/marks.length);
+
+// let items = [250,645,300,900,50];
+// for (let i=0;i<=items.length;i++){
+//      let offer = items[i]/10;
+//      items[i] -= offer;
+// }
+// console.log(items)
