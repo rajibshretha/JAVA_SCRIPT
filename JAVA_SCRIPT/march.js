@@ -187,47 +187,91 @@
 //      }
 // }
 
-let student = {
-    name: "Rajib",
-    age: 17,
-    marks: 78,
-    isPass: true
-};
-for (let key in student){
-     console.log(key,":",student[key]);
-}
-count=0;
-for(let letter of student.name){
-     count++;
-}
-console.log("Total length of name",count);
-for (let i = 1; i <= 20; i++){
-    if(i % 2 === 0){
-        console.log(i);
-    }
-}
-if(student.isPass){
-     console.log(student.name,"has passed");
-}
-else{
-     console.log(student.name,"has failed");
-}
+// let student = {
+//     name: "Rajib",
+//     age: 17,
+//     marks: 78,
+//     isPass: true
+// };
+// for (let key in student){
+//      console.log(key,":",student[key]);
+// }
+// count=0;
+// for(let letter of student.name){
+//      count++;
+// }
+// console.log("Total length of name",count);
+// for (let i = 1; i <= 20; i++){
+//     if(i % 2 === 0){
+//         console.log(i);
+//     }
+// }
+// if(student.isPass){
+//      console.log(student.name,"has passed");
+// }
+// else{
+//      console.log(student.name,"has failed");
+// }
 
-let name="Rajib";
-let counts=0;
-let temp="";
-for (let i of name){
-     counts++;
-     temp=temp+i;
-     for (let j =1; j<=counts; j++){
-          console.log(temp);
-     }
-     // console.log(i.toUpperCase());
-}
-let namee = "RAJIB";
-let tempp = "";
+// let name="Rajib";
+// let counts=0;
+// let temp="";
+// for (let i of name){
+//      counts++;
+//      temp=temp+i;
+//      for (let j =1; j<=counts; j++){
+//           console.log(temp);
+//      }
+//      // console.log(i.toUpperCase());
+// }
+// let namee = "RAJIB";
+// let tempp = "";
 
-for (let i of namee){
-    tempp = tempp + i;
-    console.log(tempp);
-}
+// for (let i of namee){
+//     tempp = tempp + i;
+//     console.log(tempp);
+// }
+
+// MARCH 12
+
+// let rajib="    Rajib SHRESTHA     ";
+// let add="don";
+// let output=(`hello my name is ${rajib} ` );
+// console.log(output)
+// console.log(`Hello my name is ${rajib.toLowerCase()}`)
+// console.log(`Hello my name is ${rajib.trim()}`)
+
+// // string slicing str.slice(Start , end ? )// return part of string
+// // str1.concat(str2)//join str2 with str 1
+
+// console.log(rajib.slice(2,6));
+// console.log(rajib.concat(add));
+
+// console.log(rajib.replace("H","y"))
+// console.log(rajib.charAt(6));
+
+// let name=prompt("Enter you full name :");
+// username="@"+name+name.length;
+// console.log(username);
+
+// array
+
+// let arr=[0,1,2,3,4,5,6,7,8,9,];
+
+// arr.splice(2,0,24)
+// console.log(arr)
+
+
+// let companies=["openai","google","gmail","bmw","audi"]
+// console.log(companies);
+// companies.pop()
+// console.log(companies);
+// companies.splice(2,1,"microsoft")
+// for(com of companies){
+//      console.log(com)
+// // }
+// let temp=0;
+// let marks=[85,97,44,37,76,60];
+// for(let idx=0 , idx<=marks.length,idx++){
+//      temp=temp+marks[idx];
+// }
