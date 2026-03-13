@@ -283,3 +283,38 @@
 //      items[i] -= offer;
 // }
 // console.log(items)
+
+// MARCH 13 FUNCTION 
+
+// function myFunc(){
+//      console.log("Welcome to Nepal")
+//      console.log("We are learning JavaScript")
+// }
+// myFunc();
+
+// function MyFun(name){
+//      console.log("hello",name);
+// }
+// MyFun("Rajib");
+
+// function add(a,b){
+//      return a+b;
+// }
+// let val=add(23,6);
+// console.log(val)
+
+// const sum=(a,b)=>{
+//      console.log(a+b);
+// }
+// console.log(sum(3,4))
+let num=(str)=>{
+     let count=0;
+     for (const char of str){
+          if (char==="a" || char==="e" ||  char==="o" ||  char==="i" || char==="u"  ){
+               count++;
+          }
+     }
+    
+     console.log(count);
+}
+num("abcaa");
