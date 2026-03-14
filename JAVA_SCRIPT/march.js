@@ -307,14 +307,87 @@
 //      console.log(a+b);
 // }
 // console.log(sum(3,4))
-let num=(str)=>{
-     let count=0;
-     for (const char of str){
-          if (char==="a" || char==="e" ||  char==="o" ||  char==="i" || char==="u"  ){
-               count++;
-          }
-     }
+// let num=(str)=>{
+//      let count=0;
+//      for (const char of str){
+//           if (char==="a" || char==="e" ||  char==="o" ||  char==="i" || char==="u"  ){
+//                count++;
+//           }
+//      }
     
-     console.log(count);
+//      console.log(count);
+// }
+// num("abcaa");
+
+// MARCH 14 FUNCTION AND METHODS
+
+// let add=(a,b)=>{
+//      console.log(a+b);
+// }
+// add(2,3);
+// let name=["rajib","shiva","susi"];
+// name.forEach(element => {
+//      console.log(element);
+// });
+// name.forEach(function printval(val){
+//      console.log(val.toUpperCase());
+// })
+// name.forEach((val,idx,arr)=>{
+//      console.log(val.toUpperCase(),idx,name)
+// // })
+
+// let num=[0,1,2,3,4,5,6,7,8,9];
+// // num.forEach((val)=>{
+// //      console.log(val*val);
+// // })
+
+// // more method
+// let newArr=num.map((vals)=>{
+//      return(vals);
+// })
+// console.log(newArr)
+
+
+// // filter 
+// let newArs=num.filter((valss)=>{
+//      if(valss%2==0){
+//           return valss;
+//      }
+// })
+// console.log(newArs)
+
+// // reduce
+// let avgg=0;
+// let avg=num.filter((valss)=>{
+//      avgg+=valss;
+//      return (avgg)
+// })
+// console.log(avgg)
+
+// const output=num.reduce((prev,curr)=>{
+//      return prev>curr?prev:curr;
+// })
+// console.log(output);
+
+// let marks=[34,62,77,85,96,74,96,75,34,4];
+// let a=marks.filter((val)=>{
+//      if (val>90){
+//           return val;
+//      }
+// })
+// console.log(a)
+
+let arr=[]
+let number=prompt("Enter a number :");
+for(let i = 1 ; i <=number ; i ++){
+     arr[i-1]=i;
 }
-num("abcaa");
+
+const output=arr.reduce((prev,curr)=>{
+     return prev+curr;
+})
+console.log(output);
+const outputfac=arr.reduce((prev,curr)=>{
+     return prev*curr;
+})
+console.log(outputfac);
