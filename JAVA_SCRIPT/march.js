@@ -377,17 +377,19 @@
 // })
 // console.log(a)
 
-let arr=[]
-let number=prompt("Enter a number :");
-for(let i = 1 ; i <=number ; i ++){
-     arr[i-1]=i;
-}
+// let arr=[]
+// let number=prompt("Enter a number :");
+// for(let i = 1 ; i <=number ; i ++){
+//      arr[i-1]=i;
+// }
 
-const output=arr.reduce((prev,curr)=>{
-     return prev+curr;
-})
-console.log(output);
-const outputfac=arr.reduce((prev,curr)=>{
-     return prev*curr;
-})
-console.log(outputfac);
+// const output=arr.reduce((prev,curr)=>{
+//      return prev+curr;
+// })
+// console.log(output);
+// const outputfac=arr.reduce((prev,curr)=>{
+//      return prev*curr;
+// })
+// console.log(outputfac);
+
+// March 15 DOM

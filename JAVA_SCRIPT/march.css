@@ -15,3 +15,11 @@
      background-color: black;
      color: white;
 }
+h1{
+     background-color: red;
+}
+button{
+     background-color: gray;
+     text-align: center;
+     align-items: center;
+}
