@@ -393,3 +393,30 @@
 // console.log(outputfac);
 
 // March 15 DOM
+
+// console.log(window)
+// console.dir(document.body)
+// console.log(document.body)
+// let mode = document.getElementById("darl");
+// console.log(mode)
+// let button = document.getElementById("mode")
+// console.log(button)
+// let question =document.querySelector("para");
+// console.dir(question);
+
+// let pract=document.getElementById("prac");
+// console.log(pract.innerText=pract.innerText+" From Rajib")
+// console.log(pract.innerText)
+
+let divs=document.querySelectorAll(".box");
+console.log(divs)
+let idx=0;
+for(div of divs){
+     
+     div.innerText="new unique value"
+     console.log( `div.innerText="new unique value ${idx}`)
+     idx++;
+}
+// divs[0].innerText="new val 1"
+// divs[1].innerText="new val 2"
+// divs[2].innerText="new val 3"

@@ -23,3 +23,13 @@ button{
      text-align: center;
      align-items: center;
 }
+.box{
+     background-color: rgb(164, 164, 30);
+     border: 1px solid red;
+     width: 60px;
+     height: 60px;
+     color: black;
+     text-align: center;
+     align-content: center;
+     margin-bottom: 7px;
+}
