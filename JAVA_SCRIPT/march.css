@@ -10,9 +10,9 @@
      width: 10%;
      margin-left: 80%;
 } */
-
+/* 
 *{
-     background-color: black;
+     background-color: rgb(79, 58, 58);
      color: white;
 }
 h1{
@@ -28,8 +28,26 @@ button{
      border: 1px solid red;
      width: 60px;
      height: 60px;
-     color: black;
+     color: rgb(110, 25, 25);
      text-align: center;
      align-content: center;
      margin-bottom: 7px;
+}
+#fuck{
+     height:100px;
+     width: 100px;
+     background-color: rgb(97, 126, 155);
+     color: rgb(28, 27, 27);
+     text-align: center;
+     align-content: center;
+} */
+
+.para{
+     background-color: rgb(200, 158, 158);
+     color: rgb(228, 229, 228);
+
+}
+.newpara{
+    
+     background-color: red;
 }

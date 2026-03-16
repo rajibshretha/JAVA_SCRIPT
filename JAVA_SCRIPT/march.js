@@ -408,15 +408,41 @@
 // console.log(pract.innerText=pract.innerText+" From Rajib")
 // console.log(pract.innerText)
 
-let divs=document.querySelectorAll(".box");
-console.log(divs)
-let idx=0;
-for(div of divs){
+// let divs=document.querySelectorAll(".box");
+// console.log(divs)
+// let idx=0;
+// for(div of divs){
      
-     div.innerText="new unique value"
-     console.log( `div.innerText="new unique value ${idx}`)
-     idx++;
-}
+//      div.innerText="new unique value"
+//      console.log( `div.innerText="new unique value ${idx}`)
+//      idx++;
+// }
 // divs[0].innerText="new val 1"
 // divs[1].innerText="new val 2"
 // divs[2].innerText="new val 3"
+
+// march 16 DOM L2
+
+// let div=document.getElementById("imdiv");
+// console.log(div.getAttribute("id"));
+// div.setAttribute("id","fuck");
+// console.log(div.getAttribute("id"));
+// div.style.backgroundColor="green";
+// div.style.width="300px"
+// let newBtn=document.createElement("Button");
+// div.after(newBtn)
+// newBtn.innerText=("click me")
+
+// practice qn 
+let newbtn=document.createElement("Button");
+newbtn.innerText="Click me ";
+newbtn.style.color="white";
+newbtn.style.backgroundColor="red";
+document.querySelector("body").prepend(newbtn)
+
+// qs 2
+let para=document.querySelector("p");
+para.getAttribute("class")
+para.classList.add("newpara");
+
+console.log(para)
