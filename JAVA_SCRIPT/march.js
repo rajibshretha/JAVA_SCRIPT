@@ -434,15 +434,18 @@
 // newBtn.innerText=("click me")
 
 // practice qn 
-let newbtn=document.createElement("Button");
-newbtn.innerText="Click me ";
-newbtn.style.color="white";
-newbtn.style.backgroundColor="red";
-document.querySelector("body").prepend(newbtn)
+// let newbtn=document.createElement("Button");
+// newbtn.innerText="Click me ";
+// newbtn.style.color="white";
+// newbtn.style.backgroundColor="red";
+// document.querySelector("body").prepend(newbtn)
 
-// qs 2
-let para=document.querySelector("p");
-para.getAttribute("class")
-para.classList.add("newpara");
+// // qs 2
+// let para=document.querySelector("p");
+// para.getAttribute("class")
+// para.classList.add("newpara");
 
-console.log(para)
+// console.log(para)
+
+// March 17
+
