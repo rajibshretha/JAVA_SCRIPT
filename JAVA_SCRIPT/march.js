@@ -447,5 +447,39 @@
 
 // console.log(para)
 
-// March 17
+// March 17event intro
 
+// march 18 event
+// let btn=document.getElementById("btn1");
+// console.log(btn)
+// btn.onclick=(e)=>{
+//      console.log("btn was clicked");
+//      // console.log(e)
+//      // console.log(e.target)
+//      // console.log(e.type)
+     
+// // }
+// btn.addEventListener=("click",()=>{
+//      console.log("event listener ");
+// })
+// let div=document.getElementById("div");
+// div.addEventListener=("click",()=>{
+//      console.log("event listener ");
+// })
+// div.onmouseover=()=>{
+//      console.log("youre inside div")
+// }
+
+let mode=document.getElementById("btn1");
+let currmode="light";
+mode.addEventListener("click",()=>{
+     if(currmode==="light"){
+          currmode="dark";
+          document.querySelector("body").style.backgroundColor="black";
+     }
+     else{
+          currmode="light"
+          document.querySelector("body").style.backgroundColor="white";
+     }
+     console.log(currmode)
+})
