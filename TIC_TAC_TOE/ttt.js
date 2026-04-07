@@ -19,15 +19,17 @@ const winPatters=[
 boxes.forEach((box) => {
      box.addEventListener("click", () => {
           console.log("box was clicked");
-          if(turnO){
+          if(turnO && !box.disabled){  // Only allow human move if it's O's turn and box is empty
                box.innerText="O";
                turnO=false;
-          } else {
-               box.innerText="X";
-               turnO=true;
+               box.disabled = true;
+               checkWinner();
+               if (!isGameOver()) {  // If game not over, computer makes move
+                    setTimeout(() => {  // Small delay for better UX
+                         computerMove();
+                    }, 500);
+               }
           }
-          box.disabled = true;
-          checkWinner();  // Added this line
      });
 });
 
@@ -46,8 +48,49 @@ const checkWinner = () => {
                if (pos1Val===pos2Val && pos2Val===pos3Val){
                     console.log("winner",pos1Val)
                     showWinner(pos1Val);  // Pass the winner
+                    return true;  // Game over
                }
           }
+     }
+     return false;  // No winner yet
+};
+
+const isGameOver = () => {
+     // Check for winner
+     if (checkWinner()) return true;
+     // Check for draw
+     for (let box of boxes) {
+          if (box.innerText === "") return false;
+     }
+     // Draw
+     msg.innerText = "It's a draw!";
+     msgContainer.classList.remove("hide");
+     return true;
+};
+
+const computerMove = () => {
+     // Try center first
+     if (boxes[4].innerText === "") {
+          boxes[4].innerText = "X";
+          boxes[4].disabled = true;
+          turnO = true;
+          checkWinner();
+          return;
+     }
+     // If center taken, pick random empty box
+     let emptyBoxes = [];
+     boxes.forEach((box, index) => {
+          if (box.innerText === "") {
+               emptyBoxes.push(index);
+          }
+     });
+     if (emptyBoxes.length > 0) {
+          let randomIndex = Math.floor(Math.random() * emptyBoxes.length);
+          let boxIndex = emptyBoxes[randomIndex];
+          boxes[boxIndex].innerText = "X";
+          boxes[boxIndex].disabled = true;
+          turnO = true;
+          checkWinner();
      }
 };
 
